@@ -42,12 +42,18 @@ jobs:
 
       - name: Run test suite
         run: dotnet test --no-build ReportyyTests/ReportyyTests.csproj -c Release
+        env:
+          REPORTYY_BASE_URL: ${{ secrets.REPORTYY_BASE_URL }}
+          REPORTYY_API_KEY: ${{ secrets.REPORTYY_API_KEY }}
 
       - name: Run test suite (Debug)
         run: dotnet test --no-build ReportyyTests/ReportyyTests.csproj -c Debug
+        env:
+          REPORTYY_BASE_URL: ${{ secrets.REPORTYY_BASE_URL }}
+          REPORTYY_API_KEY: ${{ secrets.REPORTYY_API_KEY }}
 
       - name: Pack
-        run: dotnet pack Reportyy.net -c Release --no-build --output nuget
+        run: dotnet pack -c Release --no-build --output nuget
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
