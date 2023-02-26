@@ -5,8 +5,8 @@ namespace ReportyyTests
 {
     public class ReportyyApiClientTests
     {
-        private static readonly string baseUrl = Environment.GetEnvironmentVariable("REPORTYY_BASE_URL") ?? "https://staging.api.reportyy.com/";
-        private static readonly string apiKey = Environment.GetEnvironmentVariable("REPORTYY_API_KEY") ?? "rpty_ktS0rU-pPGtTfcsTqeB0tRrsB4IUB1O8L0DaNuYv";
+        private static readonly string baseUrl = Environment.GetEnvironmentVariable("REPORTYY_BASE_URL");
+        private static readonly string apiKey = Environment.GetEnvironmentVariable("REPORTYY_API_KEY");
 
         [Fact]
         public async Task ReportyyApiClient_Should_Throw_401_With_Invalid_API_Key()

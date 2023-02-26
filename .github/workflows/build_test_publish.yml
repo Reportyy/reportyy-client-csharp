@@ -35,10 +35,10 @@ jobs:
           dotnet tool restore
   
       - name: Build Release
-        run: dotnet build src -c Release /p:ContinuousIntegrationBuild=true
+        run: dotnet build -c Release /p:ContinuousIntegrationBuild=true
 
       - name: Build Debug
-        run: dotnet build src -c Debug
+        run: dotnet build -c Debug
 
       - name: Run test suite
         run: dotnet test --no-build ReportyyTests/ReportyyTests.csproj -c Release
