@@ -14,13 +14,13 @@ $ dotnet add package Reportyy.net
 Using the [NuGet Command Line Interface (CLI)](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference):
 
 ```sh
-$ nuget install Stripe.net
+$ nuget install Reportyy.net
 ```
 
 Using the [Package Manager Console](https://docs.microsoft.com/en-us/nuget/tools/package-manager-console):
 
 ```powershell
-Install-Package Stripe.net
+Install-Package Reportyy.net
 ```
 
 From within Visual Studio:
@@ -28,14 +28,16 @@ From within Visual Studio:
 1. Open the Solution Explorer.
 2. Right-click on a project within your solution.
 3. Click on *Manage NuGet Packages...*
-4. Click on the *Browse* tab and search for "Stripe.net".
-5. Click on the Stripe.net package, select the appropriate version in the
+4. Click on the *Browse* tab and search for "Reportyy.net".
+5. Click on the Reportyy.net package, select the appropriate version in the
    right-tab and click *Install*.
 
 ## Documentation
 Please see the [Reportyy API documentation](https://docs.reportyy.com/quickstart) for more information.
 
 ## Usage
+
+[Create an account](https://reportyy.com/) and create a PDF template from the dashboard. 
 
 ```csharp
 using Reportyy;
@@ -56,7 +58,7 @@ Stream response = await client.GeneratePDF(
         merchant = new
         {
             id = "c45d1500-2184",
-            name = "Reportyy Limited",
+            name = "ACME Limited",
             address = new
             {
                 line1 = "Line 1",
