@@ -1,5 +1,6 @@
 ﻿# reportyy-client-dotnet
 ![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/Reportyy.net)
+[![Build, Test, and Publish](https://github.com/Reportyy/reportyy-client-dotnet/actions/workflows/build_test_publish.yml/badge.svg)](https://github.com/Reportyy/reportyy-client-dotnet/actions/workflows/build_test_publish.yml)
 
 C#/.NET client for Reportyy API
 

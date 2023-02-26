@@ -61,7 +61,6 @@ namespace ReportyyTests
 
             using (var fileStream = File.Create("generated.pdf"))
             {
-                response.Seek(0, SeekOrigin.Begin);
                 response.CopyTo(fileStream);
             }
         }
