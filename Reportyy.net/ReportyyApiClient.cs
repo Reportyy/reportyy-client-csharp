@@ -12,8 +12,7 @@ namespace Reportyy
     {
         private const string BASE_URL = "https://api.reportyy.com/";
         private readonly JsonSerializerOptions _options;
-
-        private static readonly HttpClient _httpClient = new HttpClient();
+        private readonly HttpClient _httpClient = new HttpClient();
 
         public ReportyyApiClient(string apiKey)
             : this(apiKey, BASE_URL)
