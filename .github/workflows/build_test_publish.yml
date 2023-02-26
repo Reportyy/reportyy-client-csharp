@@ -53,7 +53,7 @@ jobs:
           REPORTYY_API_KEY: ${{ secrets.REPORTYY_API_KEY }}
 
       - name: Pack
-        run: dotnet pack -c Release --no-build --output nuget
+        run: dotnet pack Reportyy.net -c Release --no-build --output nuget
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
