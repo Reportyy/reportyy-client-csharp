@@ -3,8 +3,8 @@
   <PropertyGroup>
     <Title>Reportyy.net</Title>
     <Description>Reportyy.net is an async portable class library for the Reportyy API.</Description>
-    <Version>0.0.1-beta1</Version>
-    <PackageVersion>0.0.1-beta1</PackageVersion>
+    <Version>0.0.1-beta2</Version>
+    <PackageVersion>0.0.1-beta2</PackageVersion>
     <LangVersion>8</LangVersion>
     <Authors>Reportyy, Connor Moreside</Authors>
     <PackageTags>reportyy</PackageTags>
