@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DEC90DC7-B1A4-4B8F-8F8F-7F2BC9258C51}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		LICENSE = LICENSE
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportyyTests", "ReportyyTests\ReportyyTests.csproj", "{DBE4EFC1-62F5-45AA-91F7-49D51704E8BD}"
@@ -32,5 +33,16 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D6E1150-AED0-4E34-9F15-91B95525808B}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.TextStylePolicy = $2
+		$2.inheritsSet = null
+		$2.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $3
+		$3.scope = text/x-csharp
+		$0.StandardHeader = $4
 	EndGlobalSection
 EndGlobal

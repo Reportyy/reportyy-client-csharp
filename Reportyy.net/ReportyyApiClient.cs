@@ -38,8 +38,8 @@ namespace Reportyy
 
         public async Task<Stream> GeneratePDF(string templateId, object data)
         {
-            var strPayload = JsonSerializer.Serialize(data, _options);
-            var payload = new StringContent(strPayload, Encoding.UTF8, "application/json");
+            var json = JsonSerializer.Serialize(data, _options);
+            var payload = new StringContent(json, Encoding.UTF8, "application/json");
             var url = $"api/v1/templates/{templateId}/generate-sync";
 
             var response = await _httpClient.PostAsync(url, payload);
